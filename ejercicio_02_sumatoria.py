@@ -6,3 +6,15 @@ EJERCICIO 02: Sumatoria
 3. Detén el bucle únicamente cuando el usuario ingrese el número 0. 
 4. Al final, muestra la suma total.
 """
+
+Suma_total = 0
+while True:
+    try
+        número = int (input("ingrese un número entero (0 para terminar): "))
+        if numero == 0:
+            Suma_total += numero
+            Suma_total = 0
+        print("Suma total:", Suma_total)
+        break
+    except ValueError:
+                print ("Entrada invalida.")
